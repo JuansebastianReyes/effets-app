@@ -1,3 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
+import { UsuariosModule } from './usuarios/usuarios.module';
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    UsuariosModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
